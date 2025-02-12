@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from RealEstateAnalysis.api import get_data
-from RealEstateAnalysis.data.apitest1 import get_items
+from RealEstateAnalysis.api import get_data, get_items
+#from RealEstateAnalysis.data.apitest1 import get_items
 
 code_file = './data/법정동코드 전체자료.txt'
 code = pd.read_csv(code_file, sep='\t')
@@ -58,4 +58,4 @@ items = items.sort_values(ascending=[True,True], by=["전용면적_평수","거�
 #print(items.head())
 #print(items[['아파트명', '전용면적_평수','거래 금액', '층수', '읍면동', '거래 월', '거래 일', '거래 연도', '건축년도']].head())
 #print(items[['아파트명', '전용면적_평수','거래 금액', '층수', '읍면동', '거래 월', '거래 일', '거래 연도', '건축년도']].head(-1))
-items.to_csv(os.path.join("%s_%s~%s.csv" %(gu, year[0], year[-1])), index=False,encoding="euc-kr")
+items.to_csv(os.path.join("./data/%s_%s~%s.csv" %(gu, year[0], year[-1])), index=False,encoding="euc-kr")
