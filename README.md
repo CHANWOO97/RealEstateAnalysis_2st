@@ -18,7 +18,7 @@ RealEstateAnalysis/
   |── codeFile.py       # 실거래가 데이터 수집후 csv 파일 생성
   │── graph.py          # 분석 결과 (그래프, 이미지)
   │── plt_sns.py        # 연도별 평균 아파트 매매가 변동 (2019 ~ 2024) 그래프 확인
-
+```
 # 📊 데이터 개요
 
 ## 1️⃣ 아파트 매매가 변동률 데이터 (`house_prices.csv`)
